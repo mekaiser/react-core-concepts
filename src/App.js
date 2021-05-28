@@ -1,25 +1,30 @@
 import './App.css';
-import logo from './logo.svg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit done <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>I am a React Person</p>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
       </header>
     </div>
   );
+}
+
+function Person(){ // this is a component named Person
+  const personStyle = {
+    border: '2px solid red',
+    margin: '10px'
+  }
+  return (
+  <div style={{border: '2px solid yellow', margin: '10px', padding: '10px'}}>
+    <h1>Name: Shahrukh Khan</h1>
+    <h3>Hero of the year</h3>
+  </div>
+  )
 }
 
 export default App;
